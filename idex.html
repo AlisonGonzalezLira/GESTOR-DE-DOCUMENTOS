@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSC - Secretaría de Seguridad Ciudadana</title>
+    <link rel="stylesheet" href="stylees.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-image">
+                <img src="images/ssc.png" alt="Logo SSC" class="logo-img">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="background-logo">
+            <img src="images/flor.jpg" alt="Imagen de fondo" class="background-image">
+        </div>
+
+        <div class="login-container">
+            <h2 class="welcome-title">¡Bienvenido de nuevo!</h2>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        class="form-input" 
+                        placeholder="Usuario"
+                        id="user"
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <input 
+                        type="password" 
+                        class="form-input" 
+                        placeholder="Contraseña"
+                        id="password"
+                        required
+                    >
+                    <button type="button" class="password-toggle" onclick="togglePassword()">👁</button>
+                </div>
+                
+                <button type="submit" class="login-btn">Iniciar sesión</button>
+                
+                <div class="forgot-password">
+                    <a href="#" onclick="forgotPassword()">Recordar contraseña</a>
+                </div>
+                
+                <div class="register-link">
+                    ¿Todavía no tienes una cuenta? <a href="#" onclick="register()">Regístrate</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Image Section -->
+    <footer class="footer-image-section">
+        <div class="footer-image-container">
+            <h3 class="footer-image-title">Comprometidos con la Seguridad Ciudadana</h3>
+            <img
+                src="p.estatal.png"
+                alt="Imagen de la Secretaría de Seguridad Ciudadana"
+                class="footer-image"
+            >
+            <p class="footer-description">
+                Trabajamos día a día para garantizar la seguridad y el bienestar de todos los ciudadanos,
+                con un enfoque integral y tecnológico que nos permite brindar un servicio de calidad.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
